@@ -1,7 +1,66 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #101218;
+  color: #f4f6fb;
+  font-family: Helvetica, Arial, sans-serif;
 }
+
+main {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 16px 16px 40px;
+  box-sizing: border-box;
+}
+
 canvas {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.picker, .actions, .setpoint {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+button, input {
+  font: inherit;
+  color: #ffffff;
+  background: #252830;
+  border: 1px solid #3d4454;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
+button, label, input {
+  flex: 0 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.selected {
+  background: #79589f;
+  border-color: #79589f;
+}
+
+input {
+  width: 5.5rem;
+}
+
+label {
+  color: #8b9bb4;
+  white-space: nowrap;
 }
